@@ -1,16 +1,21 @@
 #include "main.h"
-
 /**
- *  * main - tests function that prints if integer is positive or negative
- *   * Return: 0
- *    */
+ * print_number - prints numbers
+ * @n: number to be printed
+ * Return:void
+ */
 
-int main(void)
+void print_number(int n)
 {
-		int i;
+	unsigned int x;
 
-			i = 0;
-				positive_or_negative(i);
-
-					return (0);
+	x = n;
+	if (n < 0)
+	{
+		_putchar(45);
+		x = -n;
+	}
+	if (x / 10)
+		print_number(x / 10);
+	_putchar((x % 10) + '0');
 }
