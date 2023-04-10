@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
   *puts2 - prints evert other
   *character of a string, starting
