@@ -1,8 +1,8 @@
-Multi-Dimensional Arrays and Pointers Code Challenges
+**Multi-Dimensional Arrays and Pointers Code Challenges**
 
 This repository contains solutions to several code challenges related to C multi-dimensional arrays and pointers.
 
- Challenges
+ **Challenges**
 
  0. memset
  Implement the _memset() function which fills the first n bytes of the memory area pointed to by s with the constant byte b.
@@ -52,12 +52,12 @@ This repository contains solutions to several code challenges related to C multi
  9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
  Crack the password for the crackme2 program included in the repository.
 
- Running the Solutions
+ **Running the Solutions**
 
  To run the solutions, simply compile the source file and execute the resulting binary. Each solution is implemented in a separate C source file.
 
  gcc -Wall -Werror -Wextra -pedantic -std=gnu89 solution.c -o solution ./solution
 
- License
+ **License**
 
  This repository is licensed under the MIT License. See the LICENSE file for more information.
