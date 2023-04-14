@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include "main.h"
+/**
+  *_strchr - locates a character in a string
+  *@s: string to be searched
+  *@c: character to search
+  *Return: pointer to c or NULL if unsuccessful
+  */
+char *_strchr(char *s, char c)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+		{
+			return (&s[i]);
+		}
+
+		i++;
+	}
+
+	return (NULL);
+}
