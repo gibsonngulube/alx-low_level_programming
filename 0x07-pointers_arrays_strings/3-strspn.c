@@ -7,7 +7,7 @@
   *
   *Return: bytes of accept find in s
   */
-unsigned int _strspn(char *s, char *accept);
+unsigned int _strspn(char *s, char *accept)
 {
 	int len = 0;
 	int i, j;
@@ -22,9 +22,9 @@ unsigned int _strspn(char *s, char *accept);
 				break;
 			}
 		}
-		if (accept[j] == '\0')
+		if (accept[j + 1] == '\0' && s[i] != accept[j])
 		{
-			break;
+			return (len);
 		}
 	}
 	return (len);
