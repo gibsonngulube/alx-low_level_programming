@@ -9,12 +9,5 @@
   */
 void set_string(char **s, char *to)
 {
-	char *p = *s;
-
-	while (*to)
-	{
-		*p++ = *to++;
-	}
-
-	*p = '\0';
+	*s = to;
 }
