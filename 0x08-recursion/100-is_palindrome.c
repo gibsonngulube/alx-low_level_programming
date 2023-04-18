@@ -2,7 +2,6 @@
 #include "main.h"
 /**
  * is_palindrome_helper - helper function
- * @s: string pointer
  * @start: counter int
  * @end: counter int
  * Return: 1 or 0
