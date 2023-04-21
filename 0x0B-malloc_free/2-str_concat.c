@@ -8,7 +8,7 @@
   */
 int str_length(char *s)
 {
-	int len;
+	int len = 0;
 
 	while (s != NULL && s[len] != '\0')
 	{
@@ -26,15 +26,15 @@ int str_length(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	int len1, len2 = 0;
-	int len;
+	int total_len;
 	int i, j = 0;
 	char *result;
 
 	len1 = str_length(s1);
 	len2 = str_length(s2);
-	len = len1 + len2;
+	total_len = len1 + len2;
 
-	result = (char *) malloc(len + 1);
+	result = (char *) malloc(total_len + 1);
 
 	if (result == NULL)
 	{
@@ -53,7 +53,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 
-	result[len] = '\0';
+	result[total_len] = '\0';
 
 	return (result);
 }
